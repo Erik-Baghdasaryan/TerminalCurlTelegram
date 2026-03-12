@@ -1,31 +1,33 @@
 # TerminalCurlTelegram
-Sending messages with terminal by using a bot on telegram.
+A simple way to send messages to your Telegram "Saved Messages" (via a bot) directly from your Linux/WSL terminal.
 
-For experimented users i added the command as a file so you can just insert in your .bashrc.
+This project allows you to quickly save reminders, links, or notes to your Telegram account without needing to open the app.
 
-The idea of this command is to save some important reminders, links or anything else on your telegram with terminal debian.
+For advanced users i added the command as a file so you can just insert in your .bashrc.
 
 ## Requirements
-I used a WSL of debian and all i had to install is the command *curl*.
+curl: Ensure curl is installed (sudo apt install curl on Debian/WSL)
 
 ## Phase 1: The One-Time Setup
 Before using this command you need a mailbox (the bot) and your "address" (your Chat ID).
 
 Create a Bot:
 
-Open Telegram and search for @BotFather.
+- Open Telegram and search for @BotFather.
 
-Send /newbot, give it a name, and a username.
+- Send /newbot, give it a name, and a username.
 
-Copy the API Token it gives you (e.g., 123456:ABC-DEF1234ghIkl-zyx57W2v1u1).
+- Copy the API Token it gives you (e.g., 123456:ABC-DEF1234ghIkl-zyx57W2v1u1).
 
-Get Your Chat ID:
+- Get Your Chat ID:
 
-Search for some "@userinfobot" in Telegram and click start.
+- Search for some "@userinfobot" in Telegram and click start.
 
-It will reply with your Id (a 9 or 10-digit number). Save this.
+It will reply with your Id (a 9 or 10-digit number). 
 
-Activate the Bot:
+- Save this.
+
+## Activate the Bot:
 
 Search for your newly created bot and click Start. (The bot cannot message you until you've started a chat with it).
 
