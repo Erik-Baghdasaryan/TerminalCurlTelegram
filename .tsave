@@ -1,0 +1,1 @@
+alias tsave='f(){ curl -s -X POST "https://api.telegram.org/botYOUR_TOKEN_HERE/sendMessage" -d "chat_id=YOUR_CHAT_ID_HERE&text=$1"; }; f'
